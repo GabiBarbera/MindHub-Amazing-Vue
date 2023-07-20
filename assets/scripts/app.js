@@ -6,6 +6,7 @@ createApp({
             events: [],
             category: [],
             filter: [],
+            eventId: 0,
             inputSearch: '',
             categoryCheck: [],
             inputChecked: [],
@@ -17,6 +18,7 @@ createApp({
             .then(amazingData => {
                 this.events = amazingData.events
                 this.category = [... new Set(this.events.map(events => events.category))]
+                this.eventId = this.events._id
             })
             .catch(error => console.log(error))
     },

@@ -12,10 +12,14 @@ body {
 }
 
 .carousel-inner h1 {
+    height: 24rem;
     z-index: inherit;
     position: relative;
-    font-size: 5rem;
+    font-size: 6rem;
     color: rgb(140, 192, 222);
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar {
@@ -23,7 +27,7 @@ body {
 }
 
 .card {
-    background-color: rgb(250, 240, 215);
+    background-color: rgb(204, 238, 188);
 }
 
 .card>img {
