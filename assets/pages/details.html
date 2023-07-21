@@ -61,32 +61,35 @@
             </div>
             <div class="container-fluid justify-content-center d-flex flex-wrap gap-5 mt-5 mb-5">
                 <template v-if="objectEvents">
-                    <div class="card d-flex col-md-2 float-md-end mb-3 ms-md-3 shadow-lg p-3 rounded w-75">
-                        <img :src="objectEvents.image"
-                            class="card-details object-fit-cover rounded shadow border border-black w-50" alt="">
-                        <div
-                            class="card-body d-flex flex-column justify-content-evenly border border-black ms-3 shadow rounded">
-                            <h3 class="card-title align-self-center">{{objectEvents.name}}</h3>
-                            <h4>{{objectEvents.date}}</h4>
-                            <h5>{{objectEvents.category}}</h5>
-                            <h5 class="card-text">{{objectEvents.description}}</h5>
-                            <h5>{{objectEvents.place}}</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5>US${{objectEvents.price}}</h5>
+                    <section class="d-flex justify-content-evenly m-5 flex-wrap flex-row gap-5" id="details">
+                        <div class="card d-flex col-md-2 float-md-end mb-3 ms-md-3 shadow-lg p-3 rounded w-75">
+                            <img :src="objectEvents.image"
+                                class="card-details object-fit-cover rounded shadow border border-black w-50" alt=""
+                                id="imgdetails">
+                            <div
+                                class="card-body d-flex flex-column justify-content-evenly border border-black ms-3 shadow rounded">
+                                <h3 class="card-title align-self-center">{{objectEvents.name}}</h3>
+                                <h4>{{objectEvents.date}}</h4>
+                                <h5>{{objectEvents.category}}</h5>
+                                <h5 class="card-text">{{objectEvents.description}}</h5>
+                                <h5>{{objectEvents.place}}</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5>US${{objectEvents.price}}</h5>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </template>
+                    </section>
             </div>
-        </main>
-        <footer class="d-flex flex-wrap col-12">
-            <div class="d-flex gap-1 col-11">
-                <a href=""><img class="logo-whatsapp w-50" src="../images/whatsapp.png" alt="logo-whatsapp"></a>
-                <a href=""><img class="logo-instagram w-50" src="../images/instagram.png" alt="logo-instagram"></a>
-                <a href=""><img class="logo-facebook w-50" src="../images/facebook.png" alt="logo-facebook"></a>
-            </div>
-            <p class="d-flex align-items-center fs-4">Cohort 49</p>
-        </footer>
+            </template>
+    </div>
+    </main>
+    <footer class="d-flex flex-wrap col-12">
+        <div class="d-flex gap-1 col-11">
+            <a href=""><img class="logo-whatsapp w-50" src="../images/whatsapp.png" alt="logo-whatsapp"></a>
+            <a href=""><img class="logo-instagram w-50" src="../images/instagram.png" alt="logo-instagram"></a>
+            <a href=""><img class="logo-facebook w-50" src="../images/facebook.png" alt="logo-facebook"></a>
+        </div>
+        <p class="d-flex align-items-center fs-4">Cohort 49</p>
+    </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

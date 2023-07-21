@@ -4,7 +4,6 @@ createApp({
     data() {
         return {
             events: [],
-            event: '',
             parameter: [],
             parameters: [],
             idparameters: [],
@@ -20,7 +19,6 @@ createApp({
                 this.parameters = new URLSearchParams(this.parameter)
                 this.idparameters = this.parameters.get("parameter")
                 this.objectEvents = this.events.find(idcards => idcards._id == this.idparameters)
-                console.log(this.objectEvents);
             })
             .catch(error => console.log(error))
     }
