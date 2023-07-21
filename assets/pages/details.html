@@ -60,18 +60,20 @@
                 </button>
             </div>
             <div class="container-fluid justify-content-center d-flex flex-wrap gap-5 mt-5 mb-5">
-                <template>
-                    <div class="card shadow" style="width: 18rem;">
-                        <img v-bind:src="oneEvent.image" class="card-img-top w-100" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">{{oneEvent.name}}</h5>
-                            <p class="card-text">{{oneEvent.description}}</p>
-                        </div>
-                        <div class="card-body d-flex justify-content-between  align-items-center">
-                            <h5>USD${{oneEvent.price}}</h5>
-                            <a href="#" class="card-link text-decoration-none">
-                                <h5>Details</h5>
-                            </a>
+                <template v-if="objectEvents">
+                    <div class="card d-flex col-md-2 float-md-end mb-3 ms-md-3 shadow-lg p-3 rounded w-75">
+                        <img :src="objectEvents.image"
+                            class="card-details object-fit-cover rounded shadow border border-black w-50" alt="">
+                        <div
+                            class="card-body d-flex flex-column justify-content-evenly border border-black ms-3 shadow rounded">
+                            <h3 class="card-title align-self-center">{{objectEvents.name}}</h3>
+                            <h4>{{objectEvents.date}}</h4>
+                            <h5>{{objectEvents.category}}</h5>
+                            <h5 class="card-text">{{objectEvents.description}}</h5>
+                            <h5>{{objectEvents.place}}</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>US${{objectEvents.price}}</h5>
+                            </div>
                         </div>
                     </div>
                 </template>
