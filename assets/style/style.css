@@ -23,15 +23,23 @@ body {
 }
 
 .navbar {
-    background-color: rgb(250, 240, 215);
+    background-color: rgb(255, 217, 192);
 }
 
 .card {
-    background-color: rgb(204, 238, 188);
+    background-color: rgb(250, 240, 215);
 }
 
 .card>img {
     height: 12rem;
+    object-fit: cover;
+}
+
+.btn {
+    background-color: rgb(140, 192, 222);
+    color: black;
+    height: 2.5rem;
+    width: 6rem;
 }
 
 #details>div {
