@@ -42,3 +42,9 @@ body {
     min-height: 20rem;
     min-width: 30rem;
 }
+
+tr,
+td {
+    width: 20rem;
+    text-align: center;
+}

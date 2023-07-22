@@ -95,7 +95,7 @@
                         <template v-if="upComingEventCategory.length > 0" v-for="event of upComingEventCategory">
                             <tr>
                                 <td>{{event.category}}</td>
-                                <td>{{event.revenue}}</td>
+                                <td>USD$ {{event.revenue}}</td>
                                 <td>{{event.assistanceUp}} %</td>
                             </tr>
                         </template>
@@ -116,7 +116,7 @@
                         <template v-if="pastEventCategory.length > 0" v-for="event of pastEventCategory">
                             <tr>
                                 <td>{{event.category}}</td>
-                                <td>{{event.revenue}}</td>
+                                <td>USD$ {{event.revenue}}</td>
                                 <td>{{event.assistancePast}} %</td>
                             </tr>
                         </template>
