@@ -1,5 +1,11 @@
+:root {
+    --light-blue: rgb(140, 192, 222);
+    --peach: rgb(255, 217, 192);
+    --beige: rgb(250, 240, 215);
+}
+
 body {
-    background-color: rgb(140, 192, 222);
+    background-color: var(--light-blue);
 }
 
 .logoImage {
@@ -16,18 +22,18 @@ body {
     z-index: inherit;
     position: relative;
     font-size: 6rem;
-    color: rgb(140, 192, 222);
+    color: var(--light-blue);
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
 .navbar {
-    background-color: rgb(255, 217, 192);
+    background-color: var(--peach);
 }
 
 .card {
-    background-color: rgb(250, 240, 215);
+    background-color: var(--beige);
 }
 
 .card>img {
@@ -36,7 +42,7 @@ body {
 }
 
 .btn {
-    background-color: rgb(140, 192, 222);
+    background-color: var(--light-blue);
     color: black;
     height: 2.5rem;
     width: 6rem;
