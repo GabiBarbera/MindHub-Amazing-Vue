@@ -77,8 +77,9 @@
             </div>
             <div class="container-fluid justify-content-center d-flex flex-wrap gap-5 mt-5 mb-5">
                 <template v-if="filter.length > 0" v-for="oneEvent of filter">
-                    <div class="card col-md-2 float-md-end mb-3 ms-md-3 shadow-lg p-3 mb-5 rounded">
-                        <img v-bind:src="oneEvent.image" class="card-img-top w-100" alt="...">
+                    <div
+                        class="card col-md-2 float-md-end mb-3 ms-md-3 shadow-lg p-3 mb-5 rounded  border border-black">
+                        <img v-bind:src="oneEvent.image" class="card-img-top w-100  border border-black" alt="...">
                         <div class="card-body justify-content-between align-items-center">
                             <h5 class="card-title text-center">{{oneEvent.name}}</h5>
                             <p class="card-text">{{oneEvent.description}}</p>
