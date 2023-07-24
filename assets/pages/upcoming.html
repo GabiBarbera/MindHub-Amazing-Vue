@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" v-cloak>
         {{crossFilter}}
         <header>
             <nav class="navbar navbar-expand-lg">
@@ -72,8 +72,8 @@
                         <label class="form-check-label" v-bind:for="oneCategory">{{oneCategory}}</label>
                     </div>
                 </template>
-                <input type="search" name="search" id="search" placeholder="Write your search... 🔎"
-                    v-model="inputSearch">
+                <input v-if="events.length != 0" type="search" name="search" id="search"
+                    placeholder="Write your search... 🔎" v-model="inputSearch">
             </div>
             <div class="container-fluid justify-content-center d-flex flex-wrap gap-5 mt-5 mb-5">
                 <template v-if="filter.length > 0" v-for="oneEvent of filter">
@@ -93,7 +93,7 @@
                         </div>
                     </div>
                 </template>
-                <template v-else>
+                <template v-if="events.length != 0">
                     <div>
                         <h2>No events found 🥲</h2>
                     </div>
