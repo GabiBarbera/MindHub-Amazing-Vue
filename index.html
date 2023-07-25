@@ -68,8 +68,8 @@
             <div class="d-flex justify-content-around flex-wrap m-4">
                 <template v-if="category.length > 0" v-for="oneCategory of category">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" v-bind:id="oneCategory"
-                            v-bind:value="oneCategory" v-model="categoryCheck">
+                        <input class="form-check-input" type="checkbox" :id="oneCategory" v-bind:value="oneCategory"
+                            v-model="categoryCheck">
                         <label class="form-check-label" v-bind:for="oneCategory">{{oneCategory}}</label>
                     </div>
                 </template>

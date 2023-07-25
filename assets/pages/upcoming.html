@@ -93,9 +93,9 @@
                         </div>
                     </div>
                 </template>
-                <template v-if="events.length != 0">
+                <template v-else>
                     <div>
-                        <h2>No events found 🥲</h2>
+                        <h2 v-if="events.length != 0">No events found 🥲</h2>
                     </div>
                 </template>
             </div>
