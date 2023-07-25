@@ -8,6 +8,13 @@ body {
     background-color: var(--light-blue);
 }
 
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 [v-cloak] {
     display: none !important;
 }
@@ -34,6 +41,7 @@ body {
 
 .navbar {
     background-color: var(--peach);
+    text-align: center;
 }
 
 .card {
